@@ -71,6 +71,87 @@
             </tr>
         </tfoot>
     </table>
+
+    <article id="contact">
+        <h2>Contact</h2>
+        <p>u can contact us but wed just tell u to f**k off</p>
+
+        <form action="https://httpbin.org/get" method="get">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="creditcard">Credit card:</label>
+                <input type="text" id="creditcard" name="creditcard" required>
+            </p>
+            <p>
+                <label for="pin">Pin:</label>
+                <input type="password" id="pin" name="pin" required>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    required>
+            </p>
+            <p>
+                <label for="count">Family members:</label>
+                <input type="number" id="count" name="count" min="0" max="100" required value="1">
+            </p>
+            <p>
+                <label for="alone">I live alone</label>
+                <input type="checkbox" id="alone" name="alone">
+            </p>
+            <p>
+                <label for="type">Who are you</label>
+                <select id="type" name="type" required>
+                    <optgroup label="Fan Types"></optgroup>
+                    <option value="doctor-who-fan">Doctor Who fan</option>
+                    <option value="not-doctor-who-fan">not Doctor Who fan?</option>
+                    <option value="doom-2016-player">Doom2016 player</option>
+                    <option value="doom-eternal-player">Doom eternal player</option>
+                    <option value="metal-gear-rising-player">metal gear rising player</option>
+                    </optgroup>
+                    <optgroup label="Identity">
+                        <option value="normie" data-full-text="Normie">Normie</option>
+                        <option value="furry" data-full-text="Furry">Furry 🙀</option>
+                        <option value="a-donut" selected>a donut</option>
+                    </optgroup>
+                    <optgroup label="Responses">
+                        <option value="nothing-but-a-scratch">nothing but a scratch?</option>
+                        <option value="no">no?</option>
+                        <option value="yes">yes?</option>
+                        <option value="no-but-yes">no but yes?</option>
+                        <option value="yes-but-no">yes but no?</option>
+                        <option value="not-yes">!yes</option>
+                        <option value="not-not-yes">!!yes</option>
+                        <option value="not-no">!no</option>
+                        <option value="not-not-no">!!no</option>
+                        <option value="not-maybe">!maybe</option>
+                        <option value="maybe" data-full-text="Maybe">maybe</option>
+                        <option value="stupid" data-full-text="Stupid">stupid</option>
+                    </optgroup>
+                    <optgroup label="Additional Stupid Choices">
+                        <option value="even-more-stupid">even more stupid</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                We gurantee that your data will be sold to the highest bidder
+                we will also send you a lot of spam and we will call you at 3am
+                most important is that we will steal your identity and all your money
+                pls fill data corretcly formated and correct cassing so that we have it easier to steal your identity,
+                money and soul
+                alos be hones on 'i live alone' so we know when to rob you and/or how many to send to kill em all
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+
+    </article>
 </body>
 
 </html>
