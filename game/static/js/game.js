@@ -2,13 +2,15 @@ class Game {
     /**
      * @param {HTMLElement | null} gameTurnSignal 
      * @param {HTMLElement | null} gameField 
+     * @param {HTMLElement | null} gameRestartBtn 
      * @param {HTMLElement | null} scoreXCounter 
      * @param {HTMLElement | null} scoreYCounter 
      * @param {HTMLElement | null} gamesList 
      */
-    constructor(gameTurnSignal, gameField, scoreXCounter, scoreYCounter, gamesList) {
+    constructor(gameTurnSignal, gameField, gameRestartBtn, scoreXCounter, scoreYCounter, gamesList) {
     this.gameTurnSignal = gameTurnSignal;
     this.gameField = gameField;
+    this.gameRestartBtn = gameRestartBtn;
     this.scoreXCounter = scoreXCounter;
     this.scoreYCounter = scoreYCounter;
     this.gamesList = gamesList;
@@ -87,7 +89,7 @@ class Game {
   handleGameDraw() {
     this.gameScore.winLog.push('DRAW');
     this.gamesList.innerHTML = this.gameScore.winLog.map((winner, i) => `<li key=${i}>${winner}</li>`).join('');
-    this.fillGameField();
+    this.    
   }
 
   /**
@@ -133,6 +135,10 @@ class Game {
    */
   cellClickHandler(index, cell) {
     console.log(`[Cell ${index}] clicked`);
+    if (this.gameStatus !== this.GAME_PLAYING) {
+        console.log(`[Cell ${index}] game already finished`);
+        return;
+    }
     if (!this.isCellEmpty(cell)) { 
         console.log(`[Cell ${index}] not empty`);
         return; 

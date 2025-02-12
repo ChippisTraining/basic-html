@@ -31,7 +31,7 @@
         <!-- <div class="game-cell-<x/y>"><X/Y></div> -->
     </div>
 
-    <button id="game-restart" class="restart-button" hidden="true">Restart</button>
+    <button id="game-restart" class="restart-button" style="display: none;">Restart</button>
 
     <hr>
 
@@ -51,11 +51,12 @@
     <script>
         const gameTurnSignal = document.getElementById('game-turn-signal');
         const gameField = document.getElementById('game-field');
+        const gameRestartBtn = document.getElementById('game-restart');
         const scoreXCounter = document.getElementById('score-x-counter');
         const scoreYCounter = document.getElementById('score-y-counter');
         const gamesList = document.getElementById('games-list');
 
-        const game = new Game(gameTurnSignal, gameField, scoreXCounter, scoreYCounter, gamesList);
+        const game = new Game(gameTurnSignal, gameField, gameRestartBtn, scoreXCounter, scoreYCounter, gamesList);
 
         game.init();
         game.start();
