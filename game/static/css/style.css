@@ -11,23 +11,64 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #999;
-  padding: 2px;
+  align-self: center;
+  width: 800px;
+  height: 800px;
 }
 
 .game-cell-x,
 .game-cell-o,
-.game-cell{
+.game-cell-won,
+.game-cell {
+  text-align: center;
   background-color: #777;
   border: 1px solid black;
-  padding: 20%;
+  padding: 50px;
   font-size: 30px;
   text-align: center;
+  width: 60%;
+  height: 60%;
 }
 
-.game-cell-x{
+.game-cell-x {
   color: #f00;
+  background-color: rgba(255, 0, 0, 0.626);
 }
 
-.game-cell-o{
+.game-cell-o {
   color: #00f;
+  background-color: rgba(0, 0, 255, 0.626);
+}
+
+.game-cell-won {
+  background-color: skyblue;
+}
+
+.restart-button-won-o,
+.restart-button-won-x,
+.restart-button-draw,
+.restart-button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+}
+
+.restart-button:hover {
+  background-color: #555;
+}
+
+.restart-button-won-x {
+  background-color: #f00;
+}
+
+.restart-button-won-o {
+  background-color: #00f;
+}
+
+.restart-button-draw {
+  background-color: #0f0;
 }
