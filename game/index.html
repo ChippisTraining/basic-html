@@ -8,20 +8,47 @@
     <title>Basic HTML index</title>
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/game.js"></script>
 </head>
 
 <body>
-    <div class="game-field">
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+    <h2>Player <strong id="game-turn-signal">X</strong> turn</h2>
+
+    <hr>
+
+    <div class="game-field" id="game-field">
+        <!-- Game field dynamic loaded -->
+        <!-- <div class="game-cell-<x/y>"><X/Y></div> -->
     </div>
+
+    <hr>
+
+    <h3>
+        Games until now: X:
+        <strong id="score-x-counter">0</strong>
+        vs O:
+        <strong id="score-y-counter">0</strong>
+    </h3>
+    <p>
+    <ul id="games-list">
+    </ul>
+    </p>
+
+    <hr>
+
+    <script>
+        const gameTurnSignal = document.getElementById('game-turn-signal');
+        const gameField = document.getElementById('game-field');
+        const scoreXCounter = document.getElementById('score-x-counter');
+        const scoreYCounter = document.getElementById('score-y-counter');
+        const gamesList = document.getElementById('games-list');
+
+        const game = new Game(gameTurnSignal, gameField, scoreXCounter, scoreYCounter, gamesList);
+
+        game.init();
+        game.start();
+    </script>
+
 </body>
 
 </html>
