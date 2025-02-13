@@ -1,20 +1,5 @@
-.title {
-    color: red;
-}
-
-li:first-child {
-    color: blue;
-}
-
-.subtitle {
-    color: orange;
-}
-
-#contact-us {
-    color: green;
-}
-
-body:hover {
-    background-color: #000;
-    transition-duration: 200s;
+html {
+    background-color: black;
+    color: black;
+    visibility: hidden;
 }
