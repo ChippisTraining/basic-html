@@ -46,9 +46,14 @@
     border-radius: 2px;
 }
 
+.video-preview {
+    cursor: pointer;
+}
+
 .video-info-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
+    text-decoration: underline;
 }
 
 .profile-picture {
