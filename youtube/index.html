@@ -35,22 +35,14 @@
             display: block;
         }
 
-        .channel-picture {
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
-            background-color: grey;
+        .video-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
 
         .profile-picture {
             width: 40px;
             border-radius: 50px;
-        }
-
-        .video-info {
-            display: inline-block;
-            width: 200px;
-            background-color: grey;
         }
 
         .video-title {
@@ -81,162 +73,164 @@
 </body>
 
 <body>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/luke-100-nether.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/luke-the-chad.jpg">
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/luke-100-nether.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">100 Days in the Nether - Surviving Hell in Minecraft</p>
-                <p class="video-author">Luke TheNotable</p>
-                <p class="video-stats">19M views &#183; 3 years ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/luke-the-chad.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">100 Days in the Nether - Surviving Hell in Minecraft</p>
+                    <p class="video-author">Luke TheNotable</p>
+                    <p class="video-stats">19M views &#183; 3 years ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/botle-brew.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/brew.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/botle-brew.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">What They Found Inside This Baby Bottle Shocked the Military</p>
-                <p class="video-author">Brew</p>
-                <p class="video-stats">34,752 views &#183; 11 hours ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/brew.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">What They Found Inside This Baby Bottle Shocked the Military</p>
+                    <p class="video-author">Brew</p>
+                    <p class="video-stats">34,752 views &#183; 11 hours ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/colapse-in-seconds.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/disater-ahoy-xd.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/colapse-in-seconds.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">Catastrophic Collapse - How This Building Fell in Seconds</p>
-                <p class="video-author">Disaster Ahoy</p>
-                <p class="video-stats">2.7M views &#183; 1 year ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/disater-ahoy-xd.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Catastrophic Collapse - How This Building Fell in Seconds</p>
+                    <p class="video-author">Disaster Ahoy</p>
+                    <p class="video-stats">2.7M views &#183; 1 year ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/cs-in-4-fing-hours.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/cs-dude.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/cs-in-4-fing-hours.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">C# in 4 Hours - The Ultimate Guide</p>
-                <p class="video-author">C# Dev Hub</p>
-                <p class="video-stats">1.5M views &#183; 2 months ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/cs-dude.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">C# in 4 Hours - The Ultimate Guide</p>
+                    <p class="video-author">C# Dev Hub</p>
+                    <p class="video-stats">1.5M views &#183; 2 months ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/diy-minecraft.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/minecraft-dude-i-guess.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/diy-minecraft.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">DIY Minecraft - Building a Game from Scratch!</p>
-                <p class="video-author">Minecraft Dev Hub</p>
-                <p class="video-stats">540K views &#183; 6 months ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/minecraft-dude-i-guess.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">DIY Minecraft - Building a Game from Scratch!</p>
+                    <p class="video-author">Minecraft Dev Hub</p>
+                    <p class="video-stats">540K views &#183; 6 months ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/doom.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/dosh-guy.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/doom.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">DOOM: How One Game Defined an Entire Genre</p>
-                <p class="video-author">DoshDoshington</p>
-                <p class="video-stats">3.2M views &#183; 8 months ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/dosh-guy.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">DOOM: How One Game Defined an Entire Genre</p>
+                    <p class="video-author">DoshDoshington</p>
+                    <p class="video-stats">3.2M views &#183; 8 months ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/fire-ffire.jpg">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/franz-ferdinant-or-so.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/fire-ffire.jpg">
             </div>
-            <div class="video-info">
-                <p class="video-title">Franz Ferdinand - Fire (Official Music Video)</p>
-                <p class="video-author">Franz Ferdinand</p>
-                <p class="video-stats">12M views &#183; 5 years ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/franz-ferdinant-or-so.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Franz Ferdinand - Fire (Official Music Video)</p>
+                    <p class="video-author">Franz Ferdinand</p>
+                    <p class="video-stats">12M views &#183; 5 years ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/python-course.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/python-dude.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/python-course.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">Python for Beginners - A Complete Course from Scratch</p>
-                <p class="video-author">Python Dev Academy</p>
-                <p class="video-stats">2.5M views &#183; 1 year ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/python-dude.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Python for Beginners - A Complete Course from Scratch</p>
+                    <p class="video-author">Python Dev Academy</p>
+                    <p class="video-stats">2.5M views &#183; 1 year ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/sev-fnaf.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/sev-dude.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/sev-fnaf.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">Surviving FNAF - Analyzing the Scariest Animatronics</p>
-                <p class="video-author">Sev</p>
-                <p class="video-stats">1.1M views &#183; 5 months ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/sev-dude.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Surviving FNAF - Analyzing the Scariest Animatronics</p>
+                    <p class="video-author">Sev</p>
+                    <p class="video-stats">1.1M views &#183; 5 months ago</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="video-thumbnail" src="./static/img/thumbnails/mech-xd.avif">
-        </div>
-        <div>
-            <div class="channel-picture">
-                <img class="profile-picture" src="./static/img/profiles/steve-or-so.jpg">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="video-thumbnail" src="./static/img/thumbnails/mech-xd.avif">
             </div>
-            <div class="video-info">
-                <p class="video-title">Mechanical circuits: electronics without electricity</p>
-                <p class="video-author">Steve Mould</p>
-                <p class="video-stats">7.5 views &#183; 2 years ago</p>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./static/img/profiles/steve-or-so.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Mechanical circuits: electronics without electricity</p>
+                    <p class="video-author">Steve Mould</p>
+                    <p class="video-stats">7.5 views &#183; 2 years ago</p>
+                </div>
             </div>
         </div>
     </div>
